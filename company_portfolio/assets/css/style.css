@@ -1,0 +1,683 @@
+body {
+    font-family: sans-serif;
+}
+.main {
+    width: 1300px;
+    /* border: 1px solid black; */
+    display: flex; 
+    flex-wrap: nowrap; 
+    padding: 6rem 0 6rem 0;
+    margin-left: 1rem;
+    background-color: white;
+    
+}
+.left {
+    width: 600px;
+    height: 1480px;
+    margin: 20px 10px 20px 30px;
+    background-color: #fbfbfd;
+    box-shadow: 20px 20px 40px 0px black;   
+}
+
+.left .bar {
+    width: 595px;
+    height: 40px;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    justify-content: space-between; 
+    margin: 0px;
+}
+.tatoo { 
+    display: flex;
+    margin-left: 5px;
+}
+.tatoo > .in,.g,.tw,.f{
+    width: 10px;
+    height: 10px;
+    /* line-height: 5px;   */
+    border-radius: 50%;
+    background: rgb(41, 40, 40);
+    color: rgb(255, 255, 255); 
+    font-size: 10px;
+    padding: 5px;
+    margin: 2px;   
+}
+.tatoo > .tube {
+    width: 15px;
+    height: 10px;
+    border-radius: 50%; 
+     /* line-height: 7px ;  */
+    background: rgb(41, 40, 40);
+    color: rgb(255, 255, 255); 
+    font-size: 10px;
+    padding: 5px;
+    margin: 2px;   
+} 
+.bar {
+    padding:  10px 6px 0px 0px;
+}
+.num {
+    color: white; /* 1st bar numbers & last bar OUR*/
+}
+.left .bar .num button {
+    height: 30px;
+    width: 120px;
+    background: #669900; 
+    border-radius: 5px;
+    border: none;
+}
+.logo {
+    height: 50px;
+}
+.links {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0.5px; 
+    padding-top: 18px;
+    padding-right: 6px;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+   display: inline-flex;
+   justify-content: space-between;
+   padding: 4px;
+}
+.links a:hover {
+    font-weight: bolder;
+    font-size: 13px;
+}
+.pana img {
+    position: relative;
+    width: 14%;
+    margin-left: 5px;
+    bottom: 45px;
+}
+.head {
+    width: 600px;
+    height: 300px;
+    background-color: #669900;
+    top: -85px;
+    position: relative;
+    text-align: center;
+}
+.head h1 {
+    color: #fbfbfd;
+    font-size: 40px;
+    padding-top: 100px;
+    line-height: 0.5px;   /*it is for paragraph */
+} 
+.head p {
+    color: #fbfbfd;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 15px; 
+}
+.head button {
+    padding-top: 2px;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(253, 150, 24);
+    border: none;
+}
+#advan {
+    height: 210px;
+    position: relative;
+    top: -100px;
+}
+.our {
+    text-align: center;
+    padding-top: 30px;
+}
+.our h1 {
+    font-size: 25px;
+    display: inline;
+}
+.tages {
+    color: #669900;
+} 
+.our p {
+    color: #626264;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 11px; 
+    margin-bottom: -10px;
+}
+.tags img{
+    width: 70px; 
+    height: 70px;
+    background-repeat: no-repeat;
+    padding:  20px;
+}
+figcaption h6 {
+    font-size: 10px;
+    padding: 0px 0px 0px 20px;
+    position: relative;
+    top: -45px; 
+}
+h6.qual {
+    padding-left: 30px;
+}
+p.note {
+    font-size: 6px;
+    position: relative;
+    top: -90px;
+    padding: 28px;
+}
+#about {  
+    height: 250px;
+    background-color: rgb(228, 213, 216);
+    position: relative;
+    top: -110px;
+}
+.us  {
+    padding: 20px;
+    text-align: center; 
+}
+.us > h1 {
+    display: inline;
+    font-size: 25px; 
+}
+.rocket {
+    display: flex;
+}
+.site img {
+    width: 230px;
+    height: 180px;
+    position: relative;
+    bottom: 30px;
+}
+.line {
+   font-size: 10px;
+   position: relative;
+   top: -20px;
+   left: 20px;
+   text-align: justify;
+   margin-right: 20px;
+}
+.rocket button {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(253, 150, 24);
+    border: none;
+}
+#service {
+    height: 250px;
+    position: relative;
+    top: -100px;
+}
+.relax {
+    padding: 20px;
+    text-align: center; 
+}
+.relax > h1 {
+    display: inline;
+    font-size: 25px; 
+}
+.relax p{
+    color: #7c7c7c;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 9px; 
+    margin-top: 5px;
+}
+.shape {
+    display: inline-flex;
+}
+.square, .cir, .tri, .rec {  /* square gray box */
+    width: 130px;
+    height: 100px;
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+    margin-bottom: -6px;
+    margin-left: 15px;
+    position: relative;
+    top: 20px;
+    border-radius: 5px;
+}
+.shape p {
+    font-size: 9px;
+    position: relative;
+    top: -15px;
+}
+.shape a {
+    color: #669900;
+    font-size: 12px;
+    position: relative;
+    top: -55px;
+}
+.shape img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -120px;
+    margin-left: -60px;
+}
+#port {
+    width: 600px;
+    height: 369px;
+    background-color: black;
+    position: relative;
+    top: -98px;
+}
+.folio {
+    padding-top: 20px;
+    text-align: center; 
+}
+.folio > h1 {
+    display: inline;
+    font-size: 25px; 
+}
+.folio p {
+    color: rgb(202, 202, 202);
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 9px; 
+}
+.istock img {
+    width: 499px;
+    height: 170px;
+}
+.linkage a {
+    font-size: xx-small;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 3px;  
+}
+.linkage a:hover {
+    color: orange;
+}
+.advert img{
+    width: 499px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+    /* --------- START RIGHT SIDE ----------*/
+    /* --------- START RIGHT SIDE ----------*/
+
+ .right {
+   
+    width: 600px;
+    height: 1480px;
+    margin: 20px 10px 20px 30px;
+    box-shadow: 20px 20px 40px 0px black;
+}
+.process{
+    height: 300px;
+    background-color: rgb(220, 241, 250);
+}
+.multi {
+    padding: 20px;
+    text-align: center; 
+}
+.multi > h1 {
+    display: inline;
+    font-size: 25px; 
+}
+.multi p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 9px; 
+    color: rgb(104, 101, 101);
+}
+.multi img {
+    height: 200px;
+    width: 500px;
+}
+#people {
+    height: 280px;
+    background-color: rgb(228, 228, 228);
+}
+.rest, .cat { /* people about us and Our skills */
+    padding: 20px;
+    text-align: center; 
+}
+.rest > h1, .cat > h1 {
+    display: inline;
+    font-size: 25px; 
+}
+.rest p, .cat p {
+    margin: 0px 100px;
+    font-size: 9px; 
+    color: rgb(104, 101, 101);
+    margin-bottom: -14px;
+}
+.portion {
+    height: 200px;
+    width: 500px;
+    margin-left: 50px;
+}
+.person {
+    width: 500px;
+    height: 100px;
+    display: flex; 
+    margin-bottom: -20px;   
+}
+.person img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 23px;
+    margin-right: 10px;
+}
+.john p {
+    margin-top: -20px;
+    font-size: 9px; 
+}
+.jo{
+    width: 500px;
+    height: 100px;
+    display: flex;  
+}
+.jo p {
+    font-size: 9px;
+    margin-top: 40px;
+    margin-left: -30px;
+    margin-right: 14px;
+}
+.hn {
+    display: flex;
+    margin-left: 30px;
+}
+.mood {
+    display: flex;
+}
+.cool {
+    width: 500px;
+    display: flex;
+    height: 100px;
+}
+.cool img,.rude img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.rude {
+    width: 500px;
+    display: flex;
+    height: 100px;
+}
+.joe {
+    margin-left: 10px;
+}
+.joe p {
+    font-size: 9px;
+    margin-top: -20px;
+}
+#skill {
+    height: 230px;
+    background-color: #ebebeb;
+} 
+.waii {
+    display: flex;
+    flex-direction: row;
+  }
+.percent {
+  position: relative;
+  width: 80px;
+  height: 80px;   
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgb(107, 107, 107);
+  background: rgb(255, 255, 255);
+  left: 30px;
+  top: 10px;
+  margin-left: 70px;
+}
+.percent .number {
+  position: absolute;
+   top: 0;
+  left: 0; 
+   width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border-radius: 50%; 
+}
+.percent .number h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 30px;
+  transition: 0.5s;
+}
+.card:hover .percent .number h2 {
+  color: #000;
+  font-size: 37px;
+}
+.text {
+  position: relative;
+  color: #000;
+   margin-top: 20px; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+   transition: 3.9s; 
+  top: 5px; 
+  left: 50px;
+  margin-left: 50px;
+}
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: -10px;
+    top: -10px;
+} 
+svg circle {
+    width: 100%;
+    height: 100%; 
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10; 
+    stroke-linecap: square;
+    transform: translate(0px, 1px);  
+} 
+svg circle:nth-child(2) {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+}  
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(400 - (275 * 90) / 100); 
+    stroke: #00ff43;
+    stroke-width: 12px;
+    transition: 2.9s;
+     
+}
+.card:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(400 - (275 * 70) / 100);
+  stroke: #00a1ff;
+  stroke-width: 12px;
+  transition: 2.9s;
+}
+.card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(400 - (275 * 50) / 100);
+  stroke: #ff04f7;
+  stroke-width: 12px;
+  transition: 2.9s;
+}
+.start {
+    height: 200px;
+    background-color: #78ad0c;
+    position: relative;
+    top: -25px; 
+}
+.new {
+    padding-top: 3px;
+   text-align: center;
+}
+.new h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px; 
+}
+.new input {
+    text-align: center;
+    width: 130px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+    align-items: center;
+    width: 100px;
+    font-size: 11px;
+    color: #ffffff;
+}
+.new  button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(253, 150, 24);
+    border: none;
+    font-size: 11px;
+}
+.new p {
+    font-size: 9px; 
+   
+    margin: 20px 100px 0px 100px;
+    color: rgb(228, 228, 228);
+}
+#con {
+    height: 320px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -45px;
+}
+.tact {
+    padding: 20px;
+    text-align: center; 
+}
+.tact > h1 {
+    display: inline;
+    font-size: 25px; 
+    text-transform: uppercase;
+}
+p.para{
+    color: #7c7c7c;
+    font-size: 9px; 
+    margin: 5px 100px 10px 100px;
+}
+p.mail {
+    font-size: 12px; 
+    margin: 5px 100px 0px 100px;
+    word-spacing: 20px;
+    color: #626264;
+}
+.pol {
+    height: 175px;
+    background-color: #78ad0c;
+    position: relative;
+    top: -45px;
+}
+.pool {
+    width: 150px;
+    height: 180px;
+    
+}
+.pool h1{
+    margin-bottom: -40px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.pool .pa {
+    color: white;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+.pool .cl{
+    color: black;
+    font-weight: bolder;
+}
+.pool p {
+    font-size: 10px;
+    margin-left: 30px;
+    margin-top: 40px; 
+    color: rgb(245, 243, 243);  
+   margin-bottom: -20px;
+}
+.parker {
+    display: flex;
+}
+.ser,.vi,.ce {
+    color: white;
+    font-size: xx-small;
+}
+.ser {
+    margin-left: 200px;
+    margin-top: -100px;
+}
+.ser a, .vi a {
+    color: white;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+.vo { /* verticle line */
+    border-left: 1px solid rgb(239, 247, 239);
+    height: 130px;
+    margin-top: -100px;
+    margin-left: 20px;
+}
+.vi {
+    margin-left: 40px;
+    margin-top: -100px; 
+}
+.vi h3 {
+    white-space: nowrap;
+}
+.vl {   /* verticle line */
+    border-left: 1px solid rgb(239, 247, 239);
+    height: 130px;
+    margin-top: -100px;
+    margin-left: 20px; 
+}
+.ce {
+    margin-top: -100px;
+    margin-left: 30px;
+}
+.ce h3 {
+    margin-bottom: -10px;
+}
+.ce p{
+    margin-left: -3px;
+    margin-top: 20px;
+}
+.folow {
+    margin-top: 40px;
+    white-space: nowrap;
+}
+.tatoos { 
+   display: flex;
+    margin-left: -110px;
+}
+.tatoos > .in,.g,.tw,.f{
+    width: 10px;
+    height: 10px;
+    line-height: 5px;
+    border-radius: 50%;
+    background: rgb(41, 40, 40);
+    color: rgb(255, 255, 255); 
+    font-size: 10px;
+    padding: 5px;
+    margin: 2px; 
+}
+.tatoos > .tube {
+    width: 15px;
+    height: 10px;
+    border-radius: 50%; 
+    line-height: 7px ; 
+    background: rgb(41, 40, 40);
+    color: rgb(255, 255, 255); 
+    font-size: 10px;
+    padding: 5px;
+    margin: 2px;   
+} 
+
+
+
+
+
+
+
