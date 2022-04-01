@@ -1,0 +1,394 @@
+body {
+    background-color: rgb(235, 205, 166);
+}
+fieldset {
+    width: 600px;
+    height: 400px;
+    /* text-align: center;   */
+    margin: auto; /* at center */
+    display: flex;
+    padding: 0px;
+    background-color: rgb(255, 177, 220);
+    box-shadow: 10px 10px 100px rgb(255, 255, 255);
+    border: none;
+}
+img{
+    width: 200px;
+}
+.main {
+    margin: 0 30px;
+}
+.contain {
+    display: flex;
+}
+.right {
+    display: block;
+    line-height: 0.01;
+}
+input {
+    border-radius: 3px;
+    background-color: aliceblue;
+    border: none;
+    height: 20px;
+    font-size: 10px;
+}
+button.ok{
+    visibility: hidden;
+}
+.left {
+    margin: 0 05px 0 63px;
+    position: relative;
+    top: 15px;
+    line-height: 0.01;
+}
+.leftting {
+    display: inline;
+    word-spacing: 10px;
+    margin-bottom: 200px; 
+}
+
+.left  img {
+    width:20px;
+    position: relative;
+    top: 5px;
+}
+.photo {    /* Upload a photo */
+    margin-left: 25px;
+}
+.birth{ /*  Birthday */
+    margin-top: 35px;
+}
+.contain + p {  /*  Weight  */
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+.gennnder {
+    height: 25px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 330px;
+    
+}
+.gennnder span {
+    line-height: 1.5;  
+    background-color: rgb(255, 255, 255);
+    
+}
+.gennnder span button {
+    border: none; 
+    margin-left: 10px;  
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    background-color: #ffd8ff;
+}  
+.gennnder span button:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffa2ff;
+    border-radius: 5px;
+}
+.bot {
+    background-color: rgb(255, 255, 255);
+    top: 13px;
+    position: relative;
+    width: 403px;
+    height: 82px;
+}
+.tom {
+    padding-top: 30px;
+}
+.tom button {
+    border-radius: 50px;
+    width: 60px;
+    height: 23px;
+    border:  thin solid gray;
+    background-color: white;
+}
+button:hover {
+    background-color: rgb(161, 151, 151);
+    color: white;
+}
+.back {
+    left: 30px; 
+    position: relative;
+}
+.next {
+    left: 230px;
+    position: relative;
+}
+.right span, .left span{
+    display: flex;
+}
+.btn input {     /* inner side white inputed bar */
+    position: relative;
+    width: 130px;
+    height: 23px;
+    border-radius: 5px;
+    appearance: none;
+    /* box-shadow: 1px 6px 11px #000000; */
+    background-color: #fff;
+    left: -5px;
+    top: -2px;
+}
+.btn input:after, .btn input:before  {
+    z-index: 2;   /* it sets ON & OFF words */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+    font-size: 13px;
+} 
+.btn input:before {
+    content: "Male";
+    left: 10px;
+}
+.btn input:after  {
+    content: "Female";
+    right: 10px;
+}
+.btn {   /* it is upper moving button */
+    position: relative;
+    /* height: 29px;  */
+}
+.btn label {  /* it's upper button presence */
+    z-index: 1;
+    position: absolute;
+    top: 4px;
+    bottom: 8px;
+    border-radius: 3px;
+}
+.btn .btn-1 input {
+    transition: 0.2s -0.1s;
+}
+.btn.btn-1 input:checked , .btn.btn-1 input:not(:checked) {
+    background-color: #fff;
+}
+.btn.btn-1 input:checked + label  {
+    left: 5px;     /* it's goes on left side  */
+    right: 85px;
+    background: #ffbeff;
+    transition: left 0.5s, right 0.4s 0.2s;
+}
+.btn.btn-1 input:not(:checked) + label {
+    left: 65px;  /* it's goes on right side  */
+    right: 15px;
+    background: #ffbeff;
+    transition: left 0.5s , right 0.5s;
+}  
+#son input:before  {
+    content: "Spayed";
+    left: 10px;
+}
+#son input:after {
+    content: "Neutered";
+    right: 10px;
+}
+
+
+@media only screen and (min-width: 992px )   {
+    fieldset{
+        width: 800px;
+       height: 500px;
+    }
+    img {
+        width: 300px;
+    }
+    form {
+        justify-content: center;
+    }
+    .right,.left{
+        font-size: 20px;
+    }
+    .btn input {
+        width: 150px;
+    }
+    .btn {
+        width: 10px;
+    }
+    input {
+        width: 150px;
+        font-size: 13px;
+    }
+    .gennnder  {
+        width: 370px;
+    }
+    .bot {
+        width: 500px;
+        height: 180px;
+    }
+    .back, .next {
+        top: 40px;
+    }
+    .back {
+        left: 90px;
+    }
+    .next {
+        left: 280px;
+    }
+     
+}
+@media only screen and (max-width: 600px ) and (min-width: 495px) {
+    
+    fieldset {
+    width: auto;
+    background-color: rgb(255, 177, 220);
+    box-shadow: 10px 10px 100px rgb(255, 255, 255);
+    
+}
+fieldset > img {
+    height:400px;
+}
+p, .photo {
+    font-size: 13px;
+}
+img {
+    width: 200px;
+}
+form {
+    justify-content: center;
+}
+.right,.left{
+    font-size: 18px;
+}
+.btn input {
+    width: 100px;
+}
+.btn {
+    width: 115px;
+}
+input {
+    width: 110px;
+    font-size: 10px;
+}
+.gennnder  {
+    display: inline;
+}
+.gennnder span {
+    line-height: 1.5;  
+    background-color: rgb(252, 251, 251);
+    border-radius: 3px;
+}
+.gennnder span button {
+    border: none; 
+    margin-left: 5px;  
+    margin-right: 5px;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    background-color: #ffd8ff;
+    font-size: 12px;
+}
+.bot {
+    width: 400px;
+    height: 104px;
+}
+#son input:before ,#son input::after{
+    font-size: 10px;
+}
+.btn.btn-1 input:checked + label  {
+    left: 3px;     /* it's goes on left side  */
+    right: 75px;
+    width: 40px;
+    background: #ffbeff;
+    transition: left 0.5s, right 0.4s 0.2s;
+}
+.btn.btn-1 input:not(:checked) + label {
+    left: 45px;  /* it's goes on right side  */
+    right: 25px;
+    
+    background: #ffbeff;
+    transition: left 0.5s , right 0.5s;
+
+} 
+}
+@media only screen and (max-width: 495px ) and (min-width: 200px) {
+    
+    fieldset{
+        width: 400px;
+       height: 800px;
+       padding: 0px 50px 0px 50px;
+       margin-left: -250px;
+       margin-top: -14px;
+       
+    }
+    .left{
+        margin-left: 1px;
+        margin-top: -50px;
+    }
+     h3 {
+        padding: 0px 50px 0px 0px; 
+    }
+    img {
+        visibility: hidden;
+    }
+    form {
+        display: block;
+        
+    }
+    .contain{
+        display: block;
+        
+    }
+    .right,.left{
+        font-size: 20px;
+        display: block;
+      
+    }
+    .photo {
+        visibility: hidden;
+    }
+    .btn input {
+        width: 200px;
+    }
+    input {
+        width: 200px;
+        font-size: 15px;
+        height: 30px;
+    }
+    .contain + p {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .gennnder  {
+        width: 370px;
+        margin-top: 15px;
+        padding: 8px 0 ;
+    }
+    .gennnder span button {
+        height: 25px;
+    }
+    .bot {
+        width: 370px;
+        height: 180px;
+        left: 30px;
+    }
+    .back, .next {
+        top: 40px;
+    }
+    .back {
+        left: 40px;
+    }
+    .next {
+        left: 200px;
+    }
+    .btn input {
+        height: 33px;
+    }
+    .btn input:after, .btn input:before{
+        font-size: 20px;
+    }
+    .btn.btn-1 input:checked + label  {
+        left: 0px;     /* it's goes on left side  */
+        right: 115px;
+        width: 80px;
+        background: #ffbeff;
+        transition: left 0.5s, right 0.4s 0.2s;
+    }
+    .btn.btn-1 input:not(:checked) + label {
+        left: 115px;  /* it's goes on right side  */
+        right: 80px;
+        width: 80px;
+        background: #ffbeff;
+        transition: left 0.5s , right 0.5s;
+    }  
+}
+
+

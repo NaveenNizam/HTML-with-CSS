@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_Form</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <fieldset>
+        <img src="./assets/image/dog.jpg">
+
+        <form >
+            <div class="main">
+                <h3>Yay, puppies! Ensure your pup gets the best care!</h3>
+                <div class="contain">
+
+                    <div class="right">
+                        <p>Name</p>
+                        <input  type="text" placeholder="Pet's name" class="fake" required>
+                        
+                        <p>Breed</p>
+                        <input type="text" placeholder="Pet's breed" class="fool" required>
+                        <button onclick="ok()"class="ok">ok</button>
+                        <p>Gender</p>
+                        <span class="btn btn-1">
+                            <input type="checkbox" id="switch" >
+                             <label for="switch"></label>
+                        </span>
+                    </div>
+                    
+                    <div class="left">
+                        <div class="leffting">
+                            <img src="./assets/image/lit.png" alt="">
+                            <span class="photo">Upload a photo</span>
+                        </div>
+                        <p class="birth">Birthday</p>
+                        <input type="date" placeholder="DD/MM/YYYY" class="fake" required>
+                        <p>Spayed or Neutered</p>
+                        <span class="btn btn-1" id="son">
+                            <input type="checkbox"  id="switch" class="fake">
+                            <label for="switch"></label>
+                        </span>
+                    </div>
+                </div>
+
+                <p>Weight</p>
+                <div class="gennnder">
+                    <span>
+                        <button>0-25 lbs</button>
+                        <button>25-50 lbs</button>
+                        <button>50-75 lbs</button>
+                        <button>75-100+ lbs</button>
+                    </span>
+                </div>
+            </div>
+            
+            
+            <div class="bot">
+                <div class="tom">
+                    <span>
+                        <button class="back">Back</button>
+                        <button class="next" onclick="time()">Submit</button>
+                    </span>
+                  
+                </div>
+            </div>
+
+        </form>
+
+    </fieldset>
+
+
+
+    <script src="assets/form.js"></script>
+  
+
+</body>
+
+</html>
