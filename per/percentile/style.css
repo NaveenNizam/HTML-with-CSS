@@ -1,0 +1,46 @@
+.center {
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.main {
+    text-align: center;
+    
+}
+.call{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+#first  {
+    padding: 15px;
+}
+#subjects  {
+    border: 1px solid black;
+    width : 75%;  
+    border-collapse: collapse;
+    width: 460px;
+    height: 300px;
+}
+#subjects tr, #subjects td, #subjects th{
+    padding: 5px ;
+    border: 1px solid black;
+}
+#subjects tr {
+    font-size: 13px;
+}
+.para{
+    text-align: left;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.saleem{
+   text-align: center;
+}
+.right {
+    text-align: right;
+}
